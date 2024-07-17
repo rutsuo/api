@@ -1,0 +1,23 @@
+{
+  "name": "api",
+  "version": "0.0.1",
+  "description": "Application Programming Interface",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rutsuo/api.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express"
+  ],
+  "author": "Rutsuo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rutsuo/api/issues"
+  },
+  "homepage": "https://github.com/rutsuo/api#readme"
+}
