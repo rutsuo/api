@@ -1,0 +1,38 @@
+{
+  "name": "api",
+  "version": "0.0.1",
+  "description": "Application Programming Interface",
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rutsuo/api.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express"
+  ],
+  "author": "Rutsuo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rutsuo/api/issues"
+  },
+  "homepage": "https://github.com/rutsuo/api#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.11",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
