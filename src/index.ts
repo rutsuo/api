@@ -1,14 +1,20 @@
-import express, { Express, Request, Response } from "express";
+import express, { Express } from "express";
+import bodyParser from "body-parser";
 import dotenv from "dotenv";
+import cors from "cors";
+
+// V1 Routers
+import { UserRouter } from "./v1/routes/UserRoutes";
 
 dotenv.config();
 
 const app: Express = express();
 const port = process.env.PORT || 5000;
 
-app.get("/", (req: Request, res: Response) => {
-  res.send("Hello, World! ✨");
-});
+app.use(cors());
+app.use(bodyParser.json());
+
+app.use("/v1/user", UserRouter);
 
 app.listen(port, () => {
   console.log(
